@@ -12,11 +12,11 @@
 :root{
     --body-color: rgb(133, 159, 150);
     --page-color: hsla(30,32%,88%,0.9);
-    --sidebar-color: rgb(95, 58, 32);
+    --sidebar-color: rgb(106, 73, 50);
     /*font color*/
     --font-color: rgb(133, 83, 83);
     /*h1 color --practice**/
-    --h1-color: rbg(95,32,72);
+    --h1-color: rgb(234, 251, 235);
     /** layout variable**/
     --page-top-postion: 85%;
     --page-width: 30%;
@@ -81,7 +81,7 @@ section.intro{
     position: absolute;
     top: 10%;
     right: 30%;
-    width: 70%;
+    width: 50%;
     height: 80%;
     background-image:url(../img/newspaper3.jpg);
     padding: 2%;
@@ -101,20 +101,20 @@ div.extra2{
 
 div.extra1{
     position: fixed;
-    top: 0%;
+    top: 5%;
     bottom: 10%;
-    left: 0%;
-    width: 100%;
-    height: 20%;
-    background-image: url(.../img/newspaper2.jpg);
+    left: 10%;
+    right: 25%;
+    height: 50%;
+    background-image: url(../img/newspaper2.jpg);
     z-index: -1;
 }
 
 /**create tabs for the folder*/
 div.explanations h3, div.requirements h3, div.benefits h3, div.participation h3{
-    margin-top: -5%;
+    margin-top: -10%;
     width: 12vw;
-    background-color: chocolate;
+    background-color: rgb(236, 163, 111);
 }
 
 /**03: Typography **/
@@ -140,6 +140,57 @@ header h2{
     visibility: hidden;
 }
 
+/* 04, selector practice, transform, transition, ...*/
+a:hover{
+    font-size: 1.5em;
+}
+
+div.explanation:active{
+    top:15vh;
+    height: 90vh;
+}
     
+/*finish the active action for requirement/benefits/participation*/
 
+div.requirements:active{
+    top: 15vh;
+    height: 90vh;
+}
 
+div.benefits:active{
+    top:15vh;
+    height: 90vh;
+}
+
+div.participation:active{
+    top: 15vh;
+    height: 90vh;
+}
+
+p::first-letter{
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+p:nth-child(2n){
+    background-color: ivory;
+
+}
+p:nth-child(2n+1){
+    background-color: cornsilk;
+}
+
+li:first-of-type{
+    font-style: oblique;
+}
+/*Try one text shadow*/
+
+h1{
+    text-shadow: 1em 3em 5em rgb(162, 35, 135);
+}
+
+/*border-radius for the tab*/
+div.explanations h3, div.requirements h3, div.benefits h3, div.participation h3{
+    border-top-left-radius: 20px;
+    padding: 10px;
+}
